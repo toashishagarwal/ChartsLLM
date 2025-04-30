@@ -1,0 +1,31 @@
+Date,Region,Product,Category,Sales,Profit,Units_Sold,Customer_Satisfaction
+2023-01-01,North,Widget A,Electronics,1243.56,298.45,12,4
+2023-01-02,South,Widget B,Home Goods,879.23,219.81,5,5
+2023-01-03,East,Widget C,Office Supplies,1056.78,264.19,8,3
+2023-01-04,West,Widget A,Electronics,1567.90,391.97,15,4
+2023-01-05,North,Widget C,Office Supplies,923.45,230.86,7,3
+2023-01-06,South,Widget A,Electronics,1342.67,335.67,13,5
+2023-01-07,East,Widget B,Home Goods,765.43,191.36,4,4
+2023-01-08,West,Widget C,Office Supplies,1123.56,280.89,9,2
+2023-01-09,North,Widget B,Home Goods,943.21,235.80,6,5
+2023-01-10,South,Widget C,Office Supplies,1075.34,268.83,8,3
+2023-01-11,East,Widget A,Electronics,1456.78,364.19,14,4
+2023-01-12,West,Widget B,Home Goods,876.54,219.13,5,3
+2023-01-13,North,Widget C,Office Supplies,1045.67,261.42,8,4
+2023-01-14,South,Widget A,Electronics,1678.90,419.72,17,5
+2023-01-15,East,Widget B,Home Goods,934.56,233.64,6,3
+2023-01-16,West,Widget A,Electronics,1245.67,311.42,12,4
+2023-01-17,North,Widget C,Office Supplies,879.34,219.83,7,2
+2023-01-18,South,Widget B,Home Goods,1067.89,266.97,9,5
+2023-01-19,East,Widget A,Electronics,1589.23,397.31,15,4
+2023-01-20,West,Widget C,Office Supplies,934.56,233.64,7,3
+2023-01-21,North,Widget B,Home Goods,1078.90,269.73,9,4
+2023-01-22,South,Widget A,Electronics,1356.78,339.19,13,5
+2023-01-23,East,Widget C,Office Supplies,876.54,219.14,7,3
+2023-01-24,West,Widget B,Home Goods,954.32,238.58,8,4
+2023-01-25,North,Widget A,Electronics,1467.89,366.97,14,5
+2023-01-26,South,Widget C,Office Supplies,889.23,222.31,7,2
+2023-01-27,East,Widget B,Home Goods,1089.56,272.39,9,4
+2023-01-28,West,Widget A,Electronics,1578.90,394.73,16,5
+2023-01-29,North,Widget C,Office Supplies,897.65,224.41,7,3
+2023-01-30,South,Widget B,Home Goods,1045.67,261.42,8,4
