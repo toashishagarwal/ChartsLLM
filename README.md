@@ -18,6 +18,9 @@ When the project is run, after the csv data is scanned -
 ### Run Instructions
 * python2 main.py
 
+### Demo
+![Alt text](images/chartsRules.gif)
+
 # 2. LLM-based approach
 In this approach, OpenAI's GPT-4 model is used alongwith a prompt template to read the samples of actual csv data. Then LLM makes a suggestion for appropriate chart type.
 Once the sample csv is uploaded, the project -
@@ -37,3 +40,6 @@ Once the sample csv is uploaded, the project -
 
 ### Run Instructions
 * streamlit run chartapp.py
+
+### Demo
+![Alt text](images/chartsLLM.gif)
