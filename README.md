@@ -1,45 +1,106 @@
-# About ChartsLLM
-Dynamically generate appropriate charts based on a given CSV data & Plotly. Though the project demonstrates the csv as input type, it could very well be in any format or in-memory data.
-It contains 2 implementations - 
-* Rules-based approach
-* LLM-based approach
+# 📊 PlotMatic 
+AI-Driven Chart Generation with CSV & Plotly
 
-# 1. Rules-based approach
-In this approach, the csv data is scanned to identify categorical, numerical & datetime columns. Further it tries to check for hints of geocoded, binary & Id columns. 
-It then goes through a complex rules for these columns to suggest different chart types that would be appropriate for given data. 
-When the project is run, after the csv data is scanned -
-- user is provided a menu of appropriate chart types alongwith their X,Y axes
-- user selects a particular item
-- the corresponding chart is plotted in a new browser tab
+[![Built with Streamlit](https://img.shields.io/badge/Built%20with-Streamlit-orange?logo=streamlit&style=flat-square)](https://streamlit.io/)
+[![Powered by GPT-4](https://img.shields.io/badge/Powered%20by-GPT--4-blue?logo=openai&style=flat-square)](https://openai.com/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-### Setup Instructions
-* Create python virtual env using dependencies in requirements.txt
+> Automatically suggest and generate the most appropriate visualizations from your data using rule-based heuristics or GPT-4.
 
-### Run Instructions
-* python2 main.py
+PlotMatic intelligently analyzes your tabular data (CSV or in-memory) and generates insightful charts using Plotly. This project features two powerful approaches — a logic-based rules engine and a Large Language Model (LLM)-driven AI assistant — allowing you to explore your data visually with minimal effort.
+
+---
+
+## ✨ Features
+
+- ⚙️ Dual Modes: Rule-based and LLM-based chart recommendations
+- 🧠 Smart detection of variable types: categorical, numerical, datetime, binary, geospatial, and IDs
+- 📊 Automated chart generation using Plotly
+- 🧾 CSV preview and sample extraction
+- 🎯 Intelligent default selection of x and y axes
+- 🔄 Supports user customization for axes and grouping
+- 🌐 Opens charts in a browser tab for rich interactivity
+
+---
+
+## 📁 Project Structure
+
+This project is implemented in two modes:
+
+### 1️⃣ Rule-based Approach
+
+This approach uses a deterministic algorithm to analyze your CSV structure.
+
+- Scans the CSV file to detect columns types:
+  - Categorical
+  - Numerical
+  - Datetime
+  - Binary
+  - Geocoded
+  - Identifier columns
+
+- Applies chart suggestion rules based on column types
+- Displays a menu of recommended chart types with associated X/Y axes
+- Upon selection, renders the appropriate Plotly chart in a browser tab
+
+🛠️ Usage:
+
+```bash
+python main.py
+```
 
 ### Demo
 ![Alt text](images/chartsRules.gif)
 
-# 2. LLM-based approach
-In this approach, OpenAI's GPT-4 model is used alongwith a prompt template to read the samples of actual csv data. Then LLM makes a suggestion for appropriate chart type.
-Once the sample csv is uploaded, the project -
-- gives a preview of the file
-- suggest appropriate chart type for uploaded csv data
-- chooses appropriat defaults for X, Y axes
-- gives an option to user to change the X & Y axis
-- grouping of data
+### 2️⃣ LLM-based Approach (GPT-4)
 
-### Technologies used
-- Langchain
-- Python
-- OpenAI LLM
+Uses OpenAI’s GPT-4 (via LangChain) to introspect the structure and content of the CSV and intelligently suggest appropriate chart types.
 
-### Setup Instructions
-* Create python virtual env using dependencies in requirements.txt
+🔍 Capabilities:
 
-### Run Instructions
-* streamlit run chartapp.py
+- Displays a preview of the uploaded CSV
+- Uses LLM to suggest optimal visualization types
+- Auto-selects recommended X/Y axes and grouping columns
+- Allows user to override LLM suggestions and set preferred axes
+  
+🧠 Technologies Used:
+
+- OpenAI GPT-4 via LangChain
+- Plotly for visualization
+- Streamlit interface
+
+🛠️ Usage:
+
+```bash
+streamlit run chartapp.py
+```
+
+🛠️ Installation
+Clone the repository:
+```bash
+git clone https://github.com/your-username/ChartsLLM.git
+cd ChartsLLM
+```
+
+Create and activate a virtual environment:
+```bash
+python -m venv venv
+source venv/bin/activate  # Windows: venv\Scripts\activate
+```
+
+Install dependencies:
+```bash
+pip install -r requirements.txt
+```
 
 ### Demo
 ![Alt text](images/chartsLLM.gif)
+
+---
+📚 Technologies Used
+- 🐍 Python
+- 📈 Plotly
+- 🎨 Streamlit
+- 🤖 OpenAI GPT-4
+- 🧩 LangChain
+- 🧹 Pandas & Numpy
