@@ -1,3 +1,5 @@
+![Alt text](images/PlotMatic_logo.png)
+
 # 📊 PlotMatic 
 AI-Driven Chart Generation with CSV & Plotly
 
